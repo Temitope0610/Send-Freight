@@ -316,7 +316,7 @@ main{
   padding-right: 50px;
   white-space: nowrap;
 }
-.toggleSwitch span span span {
+.toggleSwitch a {
   position: absolute;
   right: 16%;
   z-index: 4;
@@ -343,7 +343,7 @@ main{
   border-radius: 30px;
   transition: all 0.2s ease-out;
 }
-.toggleSwitch input:checked ~ span span span {
+.toggleSwitch input:checked ~ a {
   border-color: #fff;
   left: 100%;
   margin-left: 0px;
@@ -406,7 +406,7 @@ main{
   display: none;
 }
 .mobile{
-  display: none;
+  display: n;
 }
 
 @media only screen and (max-width:600px) {
