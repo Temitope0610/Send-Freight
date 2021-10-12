@@ -134,7 +134,7 @@ class Booking extends React.Component{
                                     Export Forwarding <br />
                                     <span className='sub'>We handle custom clearance and documentation</span>
                                 </span>
-                                <a href=''></a>
+                               <span></span>
                             </label>
                         </p>
                         <p>
@@ -146,7 +146,7 @@ class Booking extends React.Component{
                                     Import Custom Clearance <br />
                                     <span className='sub'>We handle import customs and regulatory requirements</span>
                                 </span>
-                                <a href=''></a>
+                                <span></span>
                             </label>
                         </p>
                         <p>
@@ -158,7 +158,7 @@ class Booking extends React.Component{
                                     Cargo Insurance <br />
                                     <span className='sub'>Protect your cargo from logistics risks up to its full value</span>
                                 </span>
-                                <a href=''></a>
+                                <span></span>
                             </label>
                         </p>
                         <p>
@@ -170,7 +170,7 @@ class Booking extends React.Component{
                                   Transport/Delivery <br />
                                     <span className='sub'>We deliver cargo to your doorsteps from the ports.</span>
                                 </span>
-                                <a href=''></a>
+                                <span></span>
                             </label>
                         </p>
                         </div>
