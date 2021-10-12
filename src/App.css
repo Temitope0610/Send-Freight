@@ -1,38 +1,455 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #F1F2F6;
+  height: 200vh;
+}
+.navbar{
+  width: 100%;
+  height: 60px;
+  background: #0746A7;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  color: #fff;
+  /* padding: 0px 10px; */
+  
+}
+.logo{
+  margin-left:30px;
+  font-size:18px;
+}
+.search-container{
+  width:600px;
+  height:30px;
+  background:#3A6BB8;
+  margin-top:10px;
+  padding:5px 15px;
+  position:relative;
+}
+.search-bar{
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
+::placeholder{
+  color: rgb(233, 233, 233);
+}
+.search-bar:focus{
+  outline: none;
+}
+.btn{
+  padding: 10px;
+  float: right;
+  margin-left: 30px;
+  color: #fff;
+}
+.btn1{
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 140px;
+}
+.btn2{
+  background: #5CC684;
+  border: none;
+  padding: 11px;
+  border-radius: 3px;
+  width: 140px;
+  margin-right: 30px;
+}
+.heading{
+  display:grid;
+  grid-template-columns:auto auto;
+  margin-top:50px;
+  margin-left:150px;
+  font-weight:bold;
+}
+.book{
+  margin-right:1150px;
+} 
+main{
+  width: 100%;
+  max-width: 1080px; 
+	margin: auto; 
+}
+.service-card{
+  /* width: 100%; */
+  height: 200px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.01);
+  padding: 1px 45px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+}
+.air-freight-container{
+  width: 230px;
+  height: 80px;
+  background: #0746A7;
+  border-radius: 3px;
+  position: relative;
+}
+.plane{
+  position:absolute;
+  width:150px;
+  height:85px;
+  margin-top:-70px;
+  left:140px;
+}
+.sea-freight-container{
+  width: 230px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.ship{
+  position:absolute;
+  width:200px;
+  height:90px;
+  margin-top:-65px;
+  left:110px;
+}
+.inland-container{
+  width: 230px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.inland{
+  position:absolute;
+  width:200px;
+  height:80px;
+  margin-top:-82px;
+  left:93px;
+}
+.custom-container{
+  width: 230px;
+  height: 80px;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.custom{
+  position:absolute;
+  width:200px;
+  height:80px;
+  margin-top:-95px;
+  left:129px;
+}
+.import-card{
+  height: 150px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.01);
+  padding: 30px 45px;
+  margin-top: 20px;
+}
+.cargo-card{
+  height: 250px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.01);
+  padding: 1px 45px;
+  margin-top: 20px;
+}
+.details-card{
+  height: 300px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.01);
+  padding: 1px 45px;
+  margin-top: 20px;
+}
+.form-section{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.import{
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #B0B2B7;
+  border-radius: 3px 0px 0px 3px;
+  color: #B0B2B7;
+}
+.from{
+  width: 400px;
+ padding: 5px;
+  background: #F3F3F3;
+  border-radius: 3px;
+}
+.input-box{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.port{
+  background: transparent;
+  border: none;
+  margin-left: -280px;
+  padding: 6px;
+}
+.port:focus{
+  outline: none;
+}
+.date-section{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.date{
+  width: 300px;
+  padding: 10px;
+   background: #F3F3F3;
+   border-radius: 3px;
+}
+.incorterms{
+  width: 300px;
+  padding: 10px;
+   background: #F3F3F3;
+   border-radius: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toggle{
+  width: 40px;
+  background-color: #0446AA;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+  padding: 2px;
+  height: 20px;
+  position: relative;
+  border-radius: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Slider {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  min-width: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 20px;
+  min-width: unset;
+  border-radius: 50px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 22px;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.off {
+  background-color: #707070;
+  left: 2px;
+}
+.toggle-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  float: right;
+}
+.switch-container{
+  width: 300px;
+  background-color: #F1F2F6;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 5px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.measurement-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 50px;
+}
+.total-weight{
+  width: 150px;
+  height: 40px;
+  margin-left: -165px;
+  border: 1px solid #B0B2B7;
+}
+.details-container{
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.toggleSwitch {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  margin-left: 0px;
+  cursor: pointer;
+  width: 20px;
+  margin-top: 30px;
+}
+.toggleSwitch * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.toggleSwitch label,
+.toggleSwitch > span {
+  line-height: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.toggleSwitch > span {
+  position: absolute;
+  left: 90px;
+  width: 100%;
+  margin: 0;
+  padding-right: 50px;
+  white-space: nowrap;
+}
+.toggleSwitch a {
+  position: absolute;
+  right: 16%;
+  z-index: 4;
+  display: block;
+  height: 100%;
+  padding: 0;
+  width: 18px;
+  background-color: #fff;
+  border: 1px solid #CCC;
+  border-radius: 100%;
+  transition: all 0.2s ease-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.toggleSwitch > span:before {
+  content: '';
+  display: grid;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  left: -90px;
+  top: -2px;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  transition: all 0.2s ease-out;
+}
+.toggleSwitch input:checked ~ a {
+  border-color: #fff;
+  left: 100%;
+  margin-left: 0px;
+}
+.toggleSwitch input:checked ~ span:before {
+  border-color: #0446AA;
+  box-shadow: inset 0 0 0 30px #0446AA;
+}
+.sub{
+  color: #B0B2B7;
+  font-size: 10px;
+}
+
+@media only screen and (max-width:600px) {
+  .search-container{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .btn{
+    display: none;
+  }
+  .logo{
+    font-size: 16px;
+    margin-left:10px;
+  }
+  .heading{
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  .book{
+    margin-right: 200px;
+  }
+  main{
+    width: 100%;
+    margin: 10px;
+  }
+  .service-card{
+    height: 500px;
+    padding: 1px 25px;
+  }
+  .grid-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+  .air-freight-container{
+    width: 100%;
+  }
+  .sea-freight-container{
+    width: 100%;
+  }
+  .inland-container{
+    width: 100%;
+  }
+  .custom-container{
+    width: 100%;
+  }
+  .plane{
+    left:210px;
+  }
+  .ship{
+    left: 180px;
+  }
+  .inland{
+    left: 180px;
+  }
+  .custom{
+    left: 185px;
+  }
+  .import-card{
+    height: 400px;
+    padding: 25px;
+  }
+  .form-section{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+  .date-section{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+  .from{
+    width: 300px;
+    padding: 10px;
+  }
+  .cargo-card{
+    padding: 25px;
+    height: 350px;
+  }
+  .switch-container{
+    margin-top: 90px;
+  }
+  .measurement-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+  .total-weight{
+    margin-left: 0px;
+  }
+  .details-card{
+    padding: 25px;
+    height: 300px;
+  }
+  .details-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+  .toggleSwitch{
+    margin-top: 0px;
   }
 }
