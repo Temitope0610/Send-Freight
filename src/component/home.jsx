@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react'
+import React from 'react'
 import { IoMdAirplane } from 'react-icons/io'
 import { RiShipFill } from 'react-icons/ri'
 import { MdLocalShipping } from 'react-icons/md'
@@ -7,9 +7,8 @@ import { BiInfoCircle } from 'react-icons/bi'
 import { MdLocationOn } from 'react-icons/md'
 import { AiFillCalendar } from 'react-icons/ai'
 import { MdArrowDropDown } from 'react-icons/md'
-import { RiSearchLine } from 'react-icons/ri'
 import { HiOutlineArrowSmLeft } from 'react-icons/hi'
-import { MdOutlineMenu } from 'react-icons/md'
+import Navbar from './navbar'
 
 
 
@@ -31,18 +30,7 @@ class Booking extends React.Component{
     render(){
         return(
             <div>
-                <header className='navbar'>
-                    <p className='logo'>Send FREIGHT</p>
-                    <div className='search-container'>
-                        <input type="text" placeholder='Search' className='search-bar' />
-                        <RiSearchLine fill='#fff' style={{position:'absolute',right:'30px',marginTop:'-28px'}}/>
-                    </div>
-                
-                   <div style={{padding:'10px'}}>
-                        <button className='btn btn2'>Book Shipment</button>
-                        <button className='btn btn1'>Request Quote</button>
-                   </div>
-                </header>
+               <Navbar/>
                 <div className='heading'><HiOutlineArrowSmLeft/><span className="book">New Booking</span></div>
                 <main>
                     <p style={{fontSize:'12px',color:'#B0B2B7'}}>Fill in the information below to get a quote or create a new booking</p>
@@ -146,7 +134,7 @@ class Booking extends React.Component{
                                     Export Forwarding <br />
                                     <span className='sub'>We handle custom clearance and documentation</span>
                                 </span>
-                                <a></a>
+                                <a href=''></a>
                             </label>
                         </p>
                         <p>
@@ -158,7 +146,7 @@ class Booking extends React.Component{
                                     Import Custom Clearance <br />
                                     <span className='sub'>We handle import customs and regulatory requirements</span>
                                 </span>
-                                <a></a>
+                                <a href=''></a>
                             </label>
                         </p>
                         <p>
@@ -170,7 +158,7 @@ class Booking extends React.Component{
                                     Cargo Insurance <br />
                                     <span className='sub'>Protect your cargo from logistics risks up to its full value</span>
                                 </span>
-                                <a></a>
+                                <a href=''></a>
                             </label>
                         </p>
                         <p>
@@ -182,7 +170,7 @@ class Booking extends React.Component{
                                   Transport/Delivery <br />
                                     <span className='sub'>We deliver cargo to your doorsteps from the ports.</span>
                                 </span>
-                                <a></a>
+                                <a href=''></a>
                             </label>
                         </p>
                         </div>
